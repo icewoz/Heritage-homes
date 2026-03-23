@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f0f0f;
+    color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Progress Bar */
+#progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: gold;
+    width: 0%;
+    z-index: 999;
+}
+
+/* Layout */
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: gold;
+}
+
+.hero p {
+    color: #ccc;
+}
+
+/* Cards */
+.card {
+    background: #1a1a1a;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 15px;
+    border: 1px solid rgba(255,215,0,0.3);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Buttons */
+button {
+    background: gold;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Slides */
+.slide {
+    padding: 20px;
+    background: #333;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+}
