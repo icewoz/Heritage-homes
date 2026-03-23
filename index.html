@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Elevé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Progress Bar -->
+<div id="progressBar"></div>
+
+<div class="container">
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>Project Elevé</h1>
+        <p>Luxury, Reserved for the Few</p>
+        <h3 id="greeting"></h3>
+        <button onclick="checkAccess()">Enter Invite Code</button>
+    </div>
+
+    <!-- LOCK OVERLAY -->
+    <div id="lockOverlay" class="card">
+        <h2>🔒 Private Access Only</h2>
+        <p>This is an invite-only luxury experience.</p>
+    </div>
+
+    <!-- CONTENT (LOCKED INITIALLY) -->
+    <div class="locked" style="display:none;">
+
+        <!-- CONCEPT -->
+        <div class="card">
+            <h2>Concept</h2>
+            <p>Invite-only digital campaign targeting affluent professionals through personalized engagement and luxury storytelling.</p>
+        </div>
+
+        <!-- FEATURES -->
+        <div class="card">
+            <h2>Key Features</h2>
+            <ul>
+                <li>LinkedIn ABM Campaign</li>
+                <li>Immersive Virtual Tour</li>
+                <li>Digital Concierge Service</li>
+                <li>Luxury Influencer Strategy</li>
+            </ul>
+        </div>
+
+        <!-- VIRTUAL TOUR -->
+        <div class="card">
+            <h2>Virtual Tour</h2>
+
+            <div class="slide">🏡 Living Room Experience</div>
+            <div class="slide" style="display:none;">🌇 Balcony View</div>
+            <div class="slide" style="display:none;">🛏 Master Bedroom</div>
+
+            <br>
+            <button onclick="prevSlide()">Prev</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+
+        <!-- COUNTDOWN -->
+        <div class="card">
+            <h2 id="countdown"></h2>
+        </div>
+
+        <!-- LEAD FORM -->
+        <div class="card">
+            <h2>Book a Private Tour</h2>
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <button onclick="captureLead()">Submit</button>
+        </div>
+
+        <!-- DOWNLOAD -->
+        <div class="card">
+            <h2>Project Document</h2>
+            <a href="paper.pdf" target="_blank">Download Full Paper</a>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Heritage Homes | Project Elevé</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
